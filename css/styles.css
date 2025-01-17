@@ -3412,7 +3412,7 @@ img.u-pull-left {
 .timeline__title {
     font-family   : var(--font-2);
     font-weight   : 400;
-    font-size     : var(--text-xl);
+    font-size     : var(--text-lg);
     line-height   : 1.0966;
     margin-top    : 0;
     margin-bottom : var(--vspace-0_125);
@@ -3421,7 +3421,7 @@ img.u-pull-left {
 .timeline__meta {
     font-family   : var(--font-1);
     font-weight   : 400;
-    font-size     : calc(var(--text-size) * 1.1053);
+    font-size     : calc(var(--text-size) * 1);
     margin-top    : 0;
     margin-bottom : var(--vspace-0_125);
 }
