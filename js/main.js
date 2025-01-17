@@ -19,7 +19,7 @@
     .add({
         targets: '#loader',
         opacity: 0,
-        duration: 1000,
+        duration: 400,
         begin: function(anim) {
             window.scrollTo(0, 0);
         }
@@ -37,17 +37,17 @@
         translateY: [-100, 0],
         opacity: [0, 1]
     }, '-=200')
-    .add({
-        targets: '.s-intro__bg',
-        opacity: [0, 1],
-        duration: 1000,
-    })
-    .add({
-        targets: ['.animate-on-load'],
-        translateY: [100, 0],
-        opacity: [0, 1],
-        delay: anime.stagger(400)
-    });
+	.add({
+		targets: '.s-intro__bg',
+		opacity: [0, 1],
+		duration: 500,
+	}, '-=200') // Adjust timing to overlap with the previous animation
+	.add({
+		targets: ['.animate-on-load'],
+		translateY: [100, 0],
+		opacity: [0, 1],
+		delay: anime.stagger(100)
+	}, '-=500'); // Start this animation at the same time as the previous one
 
 
 
@@ -227,7 +227,7 @@
                         opacity: [0, 1],
                         translateY: [100, 0],
                         delay: anime.stagger(200, {start: 200}),
-                        duration: 600,
+                        duration: 400,
                         easing: 'easeInOutCubic',
                         begin: function(anim) {
                             current.classList.add('ss-animated');

@@ -1941,7 +1941,7 @@ select {
     max-width           : 100%;
     background          : transparent;
     border-bottom       : 1px solid var(--color-1-lighter);
-    transition          : all .3s ease-in-out;
+    transition          : all .15s ease-in-out;
 }
 
 .ss-custom-select {
@@ -2113,7 +2113,7 @@ input[type="button"] {
     text-align              : center;
     white-space             : nowrap;
     cursor                  : pointer;
-    transition              : all .3s;
+    transition              : all .15s;
     border-radius           : var(--border-radius);
     background-color        : var(--color-btn);
     border                  : 2px solid var(--color-btn);
@@ -2298,7 +2298,7 @@ td:last-child {
     margin        : .2rem .2rem;
     color         : var(--color-text-dark);
     border-radius : var(--border-radius);
-    transition    : all, .3s, ease-in-out;
+    transition    : all, .15s, ease-in-out;
 }
 
 .pgn__num:focus,
@@ -2337,7 +2337,7 @@ td:last-child {
     font            : 0/0 a;
     text-shadow     : none;
     color           : transparent;
-    transition      : all, .3s, ease-in-out;
+    transition      : all, .15s, ease-in-out;
     position        : absolute;
     top             : 50%;
     transform       : translate(0, -50%);
@@ -2354,7 +2354,7 @@ td:last-child {
 .pgn__next svg {
     height     : 2.4rem;
     width      : 2.4rem;
-    transition : all, .3s, ease-in-out;
+    transition : all, .15s, ease-in-out;
 }
 
 .pgn__prev svg path,
@@ -2886,7 +2886,7 @@ img.u-pull-left {
     height           : var(--header-height);
     background-color : var(--color-body);
     width            : 100%;
-    transition       : height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition       : height 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
     position         : absolute;
     top              : 0;
     left             : 0;
