@@ -3253,7 +3253,7 @@ img.u-pull-left {
     background-size     : cover;
     position            : relative;
 }
-
+/*
 .s-intro__bg::after {
     display        : block;
     content        : "";
@@ -3268,6 +3268,7 @@ img.u-pull-left {
     pointer-events : none;
     opacity        : 0;
 }
+*/
 
 /* ------------------------------------------------------------------- 
  * responsive:
