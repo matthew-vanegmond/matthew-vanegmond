@@ -16,14 +16,14 @@
         duration: 800,
         autoplay: false
     })
-    .add({
+    /*.add({
         targets: '#loader',
         opacity: 0,
-        duration: 400,
+        duration: 0,
         begin: function(anim) {
             window.scrollTo(0, 0);
         }
-    })
+    })*/
     .add({
         targets: '#preloader',
         opacity: 0,
@@ -36,7 +36,7 @@
         targets: '.s-header',
         translateY: [-100, 0],
         opacity: [0, 1]
-    }, '-=200')
+    }, '-=800')
 	.add({
 		targets: '.s-intro__bg',
 		opacity: [0, 1],
