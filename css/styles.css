@@ -2769,6 +2769,7 @@ img.u-pull-left {
     padding-bottom : calc(100%/(var(--aspect-ratio)));
 }
 
+
 .video-container iframe,
 .video-container object,
 .video-container embed,
@@ -3232,12 +3233,15 @@ img.u-pull-left {
 
 .s-intro__text-huge {
     --text-huge-size : 12.3rem;
-    font-size        : var(--text-huge-size);
+    /* font-size        : var(--text-huge-size); */
+	font-size: clamp(2rem, 9vw, var(--text-huge-size)); /* Adjust the min, preferred, and max sizes as needed */
+    white-space: nowrap; /* Ensures text stays on one line */
     line-height      : 1;
     letter-spacing   : -0.015em;
     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
     margin-bottom    : var(--vspace-1_25);
     color            : white;
+	
 }
 
 /* --------------------------------------------------------------------
