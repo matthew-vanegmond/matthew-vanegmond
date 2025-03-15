@@ -171,13 +171,13 @@
 
     /* preloader
      */
-    --color-preloader-bg           : #CFE6E8;
+    --color-preloader-bg           : #e4eae2;
     --color-loader                 : var(--color-text-dark);
     --color-loader-light           : var(--color-1-lighter);
 
     /* others
      */
-    --color-body                   : #CFE6E8;
+    --color-body                   : #e4eae2;
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
@@ -1615,6 +1615,7 @@ hr.fancy::before {
     font-size   : var(--text-lg);
     line-height : 1.8275;
     color       : var(--color-text-dark);
+	text-align: justify;
 }
 
 @media screen and (max-width: 900px) {
@@ -2529,6 +2530,7 @@ td:last-child {
     font-family    : var(--font-1);
     font-weight    : 600;
     font-size      : calc(var(--text-size) * 0.7895);
+    white-space: nowrap; /* Ensures text stays on one line */
     line-height    : var(--vspace-1_5);
     color          : var(--color-text-dark);
     text-transform : uppercase;
@@ -3220,11 +3222,11 @@ img.u-pull-left {
 .s-intro__text h3 {
     font-family    : var(--font-1);
     font-size      : var(--text-xxxl);
-    font-weight    : 400;
+    font-weight    : 350;
     line-height    : 1.0998;
     letter-spacing : -.01em;
     margin-top     : 0;
-    color          : white;
+    color          : 4b3a41;
 }
 
 .s-intro__text h3 span {
@@ -3232,7 +3234,7 @@ img.u-pull-left {
 }
 
 .s-intro__text-huge {
-    --text-huge-size : 12.3rem;
+    --text-huge-size : 11.2rem;
     /* font-size        : var(--text-huge-size); */
 	font-size: clamp(2rem, 9vw, var(--text-huge-size)); /* Adjust the min, preferred, and max sizes as needed */
     white-space: nowrap; /* Ensures text stays on one line */
@@ -3240,7 +3242,7 @@ img.u-pull-left {
     letter-spacing   : -0.015em;
     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
     margin-bottom    : var(--vspace-1_25);
-    color            : white;
+    color            : 4b3a41;
 	
 }
 
@@ -3248,7 +3250,7 @@ img.u-pull-left {
  * ## intro bg
  * -------------------------------------------------------------------- */
 .s-intro__bg {
-    aspect-ratio        : 1/1;
+    aspect-ratio        : 1/.7;
     width               : 100%;
     background-color    : var(--color-gray-4);
     background-image    : url(../images/intro-bg.jpg);
@@ -3257,6 +3259,9 @@ img.u-pull-left {
     background-size     : cover;
     position            : relative;
 }
+
+
+
 /*
 .s-intro__bg::after {
     display        : block;
@@ -3502,11 +3507,14 @@ img.u-pull-left {
 .s-about__clients .clients-list {
     list-style  : none;
     display     : flex;
-    flex-flow   : row wrap;
+    flex-flow   : row nowrap;
     margin-left : 0;
 }
 
 .s-about__clients .clients-list a {
+	font-size: 7.5vw;  /* Text scales with the width of the container */
+    text-align: center; /* Center text within the container */
+    white-space: nowrap; /* Prevent wrapping */
     color : var(--color-text-dark);
 }
 
