@@ -1556,7 +1556,7 @@ pre>code {
     border      : none;
 }
 
-/* deleted text, abbreviation,
+/* deleted text, abbreviationf,
  * & mark text
  */
 del {
@@ -2725,7 +2725,7 @@ td:last-child {
 }
 
 .text-huge-title {
-    --text-huge       : 9.4rem;
+    --text-huge       : 7.4rem;
     --text-multiplier : 1;
     font-family       : var(--font-2);
     font-weight       : 400;
@@ -3512,7 +3512,7 @@ img.u-pull-left {
 }
 
 .s-about__clients .clients-list a {
-	font-size: 7.5vw;  /* Text scales with the width of the container */
+	font-size: 5.1vw;  /* Text scales with the width of the container */
     text-align: center; /* Center text within the container */
     white-space: nowrap; /* Prevent wrapping */
     color : var(--color-text-dark);
